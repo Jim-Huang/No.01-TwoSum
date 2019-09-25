@@ -1,18 +1,21 @@
 /*
 给定 nums = [2, 7, 11, 15], target = 9
-因为 nums[0] + nums[1] = 2 + 7 = 9
+因為 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 */
-
+//解法01 使用雙迴圈 PS:效能差
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        for(int i = 0; i<num.length; i++){
-          for(int j = i+1; j<num.length-1; j++){
-            if(num[i]+num[j]==target){
-              return [i,j];
+        int[] ans = new int[2];
+        for(int i = 0; i<nums.length; i++){
+          for(int j = i+1; j<nums.length; j++){
+            if(nums[i]+nums[j]==target){
+                ans[0]=i;
+                ans[1]=j;
+                break;
             }
           }
         }
-        return null;
+    return ans;
     }
 }
