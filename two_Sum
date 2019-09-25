@@ -19,3 +19,6 @@ class Solution {
     return ans;
     }
 }
+
+//解法02 使用HashMap
+//HashMap<Integer, Integer> m = new HashMap<Integer, Integer>();
