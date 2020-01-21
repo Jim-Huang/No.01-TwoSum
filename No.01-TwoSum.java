@@ -1,20 +1,3 @@
-//解法01 使用雙迴圈 PS:效能差
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        int[] ans = new int[2];
-        for(int i = 0; i<nums.length; i++){
-          for(int j = i+1; j<nums.length; j++){
-            if(nums[i]+nums[j]==target){
-                ans[0]=i;
-                ans[1]=j;
-                break;
-            }
-          }
-        }
-    return ans;
-    }
-}
-
 //解法02 使用HashMap
 /*以題目為例 HashMap內容如下
     (2,0)
